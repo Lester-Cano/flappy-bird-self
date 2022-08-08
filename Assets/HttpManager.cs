@@ -2,16 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.UI;
 
 public class HttpManager : MonoBehaviour
 {
+    [SerializeField] Text[] Namearray;
+    [SerializeField] Text[] Scorearray;
 
-    [SerializeField]
+   [SerializeField]
     private string URL;
     // Start is called before the first frame update
     void Start()
     {
-        
+       
     }
 
     public void ClickGetScores()
@@ -36,16 +39,30 @@ public class HttpManager : MonoBehaviour
 
             foreach (ScoreData score in resData.scores)
             {
-                Debug.Log(score.userId +" | "+score.value);
+
+                Debug.Log(score.userId + " | " + score.value);
+
+                Namearray[score.userId - 1].text = score.userId.ToString();
+
+            }
+            for (int i = 0; i < resData.scores.Length; i++)
+            {
+
+                Scorearray[i].text = resData.scores[i].value.ToString();
+
             }
         }
         else
         {
             Debug.Log(www.error);
         }
+
     }
-   
 }
+
+
+
+
 
 
 [System.Serializable]
