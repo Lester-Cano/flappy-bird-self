@@ -2097,19 +2097,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e968c4b65d0088c44ae8df8de507ed5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Namearray:
+  nameArray:
   - {fileID: 775795588}
   - {fileID: 2123481892}
   - {fileID: 1149300500}
   - {fileID: 64769064}
   - {fileID: 492002248}
-  Scorearray:
+  scoreArray:
   - {fileID: 104773777}
   - {fileID: 535842515}
   - {fileID: 908773551}
   - {fileID: 1686467103}
   - {fileID: 1163852066}
-  URL: https://my-json-server.typicode.com/manolovillarreal/FakeApi
+  URL: https://my-json-server.typicode.com/Lester-Cano/appi-Falsa
 --- !u!1 &1651017538
 GameObject:
   m_ObjectHideFlags: 0
@@ -2284,7 +2284,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1755445222
 MonoBehaviour:
   m_ObjectHideFlags: 0
